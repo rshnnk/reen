@@ -1,0 +1,25 @@
+.btn{
+	width: 295px;
+	background-color: $green;
+	border-radius: 2px;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 18px;
+	padding: 21px 0;
+	color: $white;
+	text-transform: uppercase;
+	box-shadow: 0 2px 0 $dark-green;
+	&:hover{
+		color: $white;
+		background: lighten($green, 3%);
+	}
+	&:visited{
+		color: $white;
+	}
+	&:focus, &:active{
+		outline: none;
+	}
+	@include media ('print'){
+		display: none;
+	}
+}

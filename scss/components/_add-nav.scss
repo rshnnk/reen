@@ -1,0 +1,93 @@
+.add-nav {
+	font-size: 12px;
+	line-height: 20px;
+	color: $dark-blue;
+	background-color: $light-gray;
+	border-bottom: 1px solid $gray;
+	.container{
+		@include media ('<tablet'){
+			text-align: center;
+		}
+	}
+	li {
+		display: block;
+		float: left;
+	}
+	a {
+		color: inherit;
+		@include animate (color);
+		&:hover {
+			color: $green;
+		}
+	}
+}
+.add-nav-items {
+	display: inline-block;
+	&:first-child {
+		float: left;
+		a {
+			padding: 10px;
+			line-height: 40px;
+			@include media ('<tablet'){
+				padding: 0 10px;
+				line-height: 20px;
+			}
+		}
+		.fa {
+			margin: 0 8px 0 0;
+
+			&-mobile {
+				font-size: 18px;
+				line-height: 14px;
+			}
+		}
+	}
+	&:last-child {
+		float: right;
+		margin: 0 -6px 0;
+		a {
+			width: 30px;
+			line-height: 40px;
+			display: block;
+			text-align: center;
+			@include media ('<tablet'){
+				padding: 0 10px;
+				line-height: 20px;
+			}
+		}
+		li:hover {
+			a {
+				color: $white;
+			}
+		}
+	}
+	&:first-child, &:last-child{
+		@include media ('<tablet'){
+			float: none;
+		}
+	}
+	span{
+		text-indent: -9999px;
+		display: block;
+		float: left;
+		position: absolute;
+	}
+}
+.dark-blue {
+	@include sweep-to-top(#4668b3);
+}
+.red {
+	@include sweep-to-top(#de5745);
+}
+.light-blue {
+	@include sweep-to-top(#2fbbed);
+}
+.dark-red {
+	@include sweep-to-top(#d94348);
+}
+.blue {
+	@include sweep-to-top(#3079ff);
+}
+.pink {
+	@include sweep-to-top(#eb6397);
+}

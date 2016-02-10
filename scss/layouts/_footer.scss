@@ -1,0 +1,144 @@
+.footer {
+	padding: 70px 0 70px;
+	background: #2f4052;
+	color: #a3b1bf;
+	font-size: 14px;
+	line-height: 22px;
+	word-spacing: 2px;
+	@include media ('<tablet') {
+		text-align: center;
+		padding: 30px 0;
+	}
+	@media print{
+		padding: 0;
+		margin: 0;
+	}
+	h3 {
+		font: 16px/22px "Lato", sans-serif;
+		letter-spacing: 1px;
+		margin: 0 0 22px;
+		color: $white;
+		text-transform: uppercase;
+		@media print{
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			line-height: 18px;
+			page-break-before: always;
+		}
+	}
+	a {
+		color: inherit;
+		&:hover {
+			color: $green;
+		}
+	}
+	p {
+		margin: 0 0 15px;
+	}
+	.logo {
+		margin: 0 0 18px;
+		display: block;
+		@include media ('<tablet'){
+			display: inline-block;
+			margin: 0 0 10px;
+		}
+	}
+	.more {
+		font-size: 15px;
+		line-height: 22px;
+		color: inherit;
+		font-weight: 700;
+	}
+	.box-images{
+		@extend %clearfix;
+		@include media ('<tablet'){
+			margin: 0 0 10px;
+		}
+	}
+	.box-image{
+		@include media ('<tablet'){
+			width: 50%;
+			float: left;
+		}
+	}
+	.col-sm-3{
+		@media print{
+			width: 50%;
+			float: left;
+			text-align: center;
+		}
+	}
+}
+.footer-boxes {
+	padding: 0 8px;
+	& > div:nth-child(3) {
+		padding: 0 23px;
+
+		@include media ('<desktop') {
+			padding: 0 15px;
+		}
+		h3 {
+			margin: 0 0 15px;
+		}
+		p {
+			margin: 0 0 18px;
+		}
+		.fa {
+			font-size: 15px;
+			width: 20px;
+		}
+	}
+	& > div:last-child {
+		padding: 0 0 0 30px;
+
+		@include media ('<desktop') {
+			padding: 0 15px;
+		}
+		h3 {
+			margin: 0 0 15px;
+		}
+		p {
+			margin: 0 0 16px;
+		}
+	}
+}
+.subscribe {
+	&-form {
+		position: relative;
+	}
+	&-input {
+		width: 100%;
+		background: #4e5c6c;
+		color: #a3b1bf;
+		font-size: 14px;
+		line-height: 22px;
+		border-radius: 2px;
+		border: none;
+		line-height: 40px;
+		padding: 0 10px;
+		margin: 0 0 5px;
+	}
+	&-button {
+		background: $green;
+		color: $white;
+		text-transform: uppercase;
+		box-shadow: 0 2px 0 $dark-green;
+		border: none;
+		border-radius: 2px;
+		position: absolute;
+		top: 5px;
+		right: 6px;
+		line-height: 28px;
+		padding: 0 9px;
+
+		&:hover {
+			background: lighten($green, 3%);
+		}
+		@include media ('<desktop') {
+			position: static;
+			width: 100%;
+			line-height: 38px;
+		}
+	}
+}

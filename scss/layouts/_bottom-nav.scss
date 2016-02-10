@@ -1,0 +1,101 @@
+.bottom-nav {
+	position: relative;
+	line-height: 10px;
+	font-size: 14px;
+	color: #707e8c;
+	background: #283645;
+	padding: 33px 0;
+	.nav {
+		@extend %clearfix;
+		li {
+			display: block;
+			float: left;
+			position: relative;
+			margin: 0 12px;
+
+			&:first-child {
+				&:before {
+					display: none;
+				}
+			}
+			&:before {
+				position: absolute;
+				content: '.';
+				color: inherit;
+				display: block;
+				left: -13px;
+				top: -5px;
+				@include media ('<tablet') {
+					display: none;
+				}
+			}
+		}
+		a {
+			color: inherit;
+			&:hover {
+				color: $green;
+			}
+		}
+	}
+	p {
+		margin: 0;
+	}
+	.navigation {
+		@include media ('<desktop') {
+			margin: 0 40px 0 0;
+		}
+		@include media ('<tablet') {
+			margin: 0;
+			width: 100%;
+		}
+		li {
+			@include media ('<tablet') {
+				width: 100%;
+				font-size: 18px;
+				line-height: 30px;
+				text-align: center;
+				margin: 0;
+			}
+		}
+	}
+	.back-to-top {
+		@include animate (color);
+		position: absolute;
+		overflow: hidden;
+		right: 5px;
+		bottom: 18px;
+		font-size: 20px;
+		border-radius: 2px;
+		background: $dark-blue;
+		color: #949ba2;
+		padding: 10px;
+		&:hover {
+			color: $green;
+		}
+		&:active, &:focus {
+			outline: none;
+		}
+		@include media ('<tablet') {
+			bottom: 10px;
+		}
+		span{
+			text-indent: -9999px;
+			display: block;
+			position: absolute;
+		}
+	}
+}
+.copyright {
+	padding: 0 8px;
+	float: left;
+	@include media ('<tablet') {
+		padding: 0;
+		text-align: center;
+		width: 100%;
+		line-height: 30px;
+	}
+	@include media ('print'){
+		float: none;
+		text-align: center;
+	}
+}

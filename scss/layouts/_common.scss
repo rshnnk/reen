@@ -1,0 +1,349 @@
+.item-img {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	&:before, &:after {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		content: "";
+		background: rgba($green, 0.5);
+		margin: -1000px 0 0;
+		@include animate(margin);
+	}
+	&:after {
+		content: '+';
+		margin: -1000px 0 0;
+		font-size: 40px;
+		color: $white;
+		background: none;
+		height: auto;
+		top: 50%;
+		left: 50%;
+	}
+	&:hover {
+		&:before {
+			margin: 0
+		}
+		&:after {
+			margin: -11px -9px;
+			width: auto;
+		}
+	}
+}
+.fade-in {
+	&:before {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		content: "";
+		background: rgba($green, 0.5);
+		opacity: 0;
+		@include animate(opacity);
+	}
+	&:after {
+		opacity: 0;
+		content: '+';
+		// margin: 0;
+		font-size: 40px;
+		color: $white;
+		background: none;
+		height: auto;
+		@include animate(opacity);
+	}
+	&:hover {
+		&:before, &:after {
+			opacity: 1;
+		}
+	}
+	.touchtouchevents &{
+		&:before, &:after {
+			opacity: 0;
+			margin: 0;
+		}
+	}
+}
+.item-box {
+	text-align: center;
+	padding: 122px 0 0;
+	margin: 0 0 60px;
+	font-size: 22px;
+	line-height: 33px;
+	color: #73879c;
+	@include media ('<tablet') {
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 10px;
+		padding: 30px 0;
+	}
+	@media print{
+		margin: 0;
+		padding: 0;
+		font-size: 18px;
+		line-height: 20px;
+	}
+	.fa {
+		color: $green;
+		font-size: 60px;
+		@include media ('<tablet') {
+			float: none !important;
+			display: block;
+			text-align: center;
+		}
+		@include media ('print'){
+			display: none;
+		}
+	}
+	.item {
+		text-align: left;
+		@include media ('print'){
+			width: 100%;
+		}
+	}
+	.wrapper {
+		overflow: auto;
+		font-size: 16px;
+		color: #73879c;
+		line-height: 25px;
+		@include media ('<tablet') {
+			line-height: 20px;
+		}
+		@media print{
+			float: none;
+			width: 100%;
+			line-height: 20px;
+		}
+	}
+	h2 {
+		color: $dark-blue;
+		font: 300 26px/37px "Lato", sans-serif;
+		margin: 0 0 20px;
+		@include media ('<tablet') {
+			font-size: 20px;
+			line-height: 22px;
+		}
+		@include media ('print'){
+			font-size: 18px;
+			line-height: 20px;
+		}
+	}
+	p {
+		margin: 0 0 67px;
+		@include media ('<tablet') {
+			margin: 0 0 10px;
+		}
+		@media print{
+			margin: 0 0 20px;
+		}
+	}
+}
+.product-list {
+	padding: 118px 0 133px;
+	margin: 0 0 100px;
+	text-align: center;
+	background: #f2f5f7;
+	font-size: 22px;
+	line-height: 24px;
+	color: #73879c;
+	@include media ('<tablet') {
+		padding: 30px 0;
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0;
+	}
+	h1 {
+		margin: 0 0 28px;
+	}
+	.title {
+		font: 19px/25px "Lato", sans-serif;
+		color: $dark-blue;
+		margin: 0 0 5px;
+		display: block;
+
+		@include media ('<tablet') {
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+	p {
+		margin: 0 0 80px;
+
+		@include media ('<tablet') {
+			margin: 0 0 10px;
+		}
+	}
+	.overlay{
+		display: block;
+		color: $white;
+		a{
+			color: $white;
+			&:hover{
+				color: $white;
+			}
+		}
+	}
+	.item {
+		font-size: 14px;
+		box-shadow: 0 2px 0 $gray;
+		border-radius: 2px;
+		margin: 0 0 83px;
+		padding: 0 0 25px;
+		background: $white;
+		@include media ('<tablet') {
+			margin: 0 0 10px;
+		}
+		.item-img{
+			background: $green;
+			min-height: 300px;
+			width: 100%;
+			@include media ('<desktop'){
+				min-height: 50px;
+			}
+		}
+		a {
+		color: inherit;
+			&:hover {
+				color: $green;
+			}
+		}
+	}
+	.item-img {
+		margin: 0 0 22px;
+		@include media ('<desktop') {
+			display: block;
+		}
+	}
+	.product-carousel {
+		&:hover {
+			.owl-buttons {
+				opacity: 1;
+			}
+		}
+		@include media ('<desktop') {
+			padding: 0 10px;
+		}
+	}
+	.owl-controls {
+		display: inline-block;
+		position: relative;
+		top: 15px;
+	}
+	.owl-buttons {
+		top: 0;
+		width: 100%;
+		opacity: 0;
+		@include animate (opacity);
+
+		.glyphicon {
+			background: none;
+		}
+	}
+	.owl {
+		&-prev, &-next {
+			position: absolute;
+			top: 50%;
+			margin: -20px 0 0;
+			border-radius: 2px;
+			padding: 0;
+
+			.glyphicon {
+				padding: 5px;
+				background: #c9d2da;
+				font-size: 20px
+			}
+		}
+		&-prev {
+			left: -50px;
+		}
+		&-next {
+			right: -50px;
+		}
+	}
+	.carousel-item {
+		display: inline-block;
+		position: relative;
+		overflow: hidden;
+		color: #fff;
+		font-size: 14px;
+		line-height: 22px;
+		&:hover {
+			.overlay {
+				top: 0;
+			}
+		}
+		.overlay {
+			@include animate (top);
+			background: rgba($green, 0.5);
+			position: absolute;
+			top: -100%;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			.touchtouchevents &{
+				top: 0;
+			}
+		}
+		.title {
+			font: 16px/22px "Lato", sans-serif;
+			color: inherit;
+			margin: 75px 0 0;
+			display: block;
+			width: 100%;
+		}
+	}
+}
+.contact-box {
+	padding: 18px 0 50px;
+	margin: 0 auto 82px;
+	font-size: 22px;
+	line-height: 34px;
+	color: #73879c;
+	@include media ('<tablet') {
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 auto 10px;
+		padding: 30px 0;
+	}
+	h1 {
+		margin: 0 0 23px;
+	}
+	p {
+		margin: 0 0 37px;
+	}
+	.btn {
+		width: 160px;
+		padding: 14px;
+	}
+}
+.accessibility{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+	height: 0;
+    overflow:hidden;
+}
+.accessibility:focus{
+    position:static;
+    width:auto;
+    height:auto;
+}
+@media print{
+	* {
+		background:none !important;
+		color:#000 !important;
+	}
+	html,
+	body{
+		min-width:1px;
+		
+	}
+	a{color:#000 !important;}
+	.print-logo{
+		position:static;
+		display:block;
+		margin:0 auto 20px;
+	}
+}

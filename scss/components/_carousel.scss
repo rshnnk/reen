@@ -1,0 +1,300 @@
+.owl-carousel {
+	display: block;
+	.title, .title-bg {
+		text-transform: uppercase;
+		font: 700 78px/78px "Lato", sans-serif;
+		display: inline-block;
+
+		@include media ('<desktop') {
+			font-size: 40px;
+			line-height: 40px;
+		}
+		@include media ('<tablet') {
+			font-size: 20px;
+			line-height: 22px;
+		}
+		@include media ('print'){
+			font-size: 20px;
+			line-height: 22px;
+		}
+	}
+	.title-bg {
+		span {
+			background: #506a85;
+			color: $white;
+			margin: 0 0 5px;
+			padding: 25px 40px;
+			white-space: nowrap;
+			display: inline-block;
+
+			@include media ('<desktop') {
+				padding: 10px 20px;
+			}
+			@include media ('<tablet'){
+				padding: 3px;
+			}
+			@include media ('print'){
+				padding: 0;
+			}
+		}
+	}
+	.btn {
+		background: $btn-green;
+		box-shadow: 0 2px 0 #148e76;
+
+		@include media ('<desktop') {
+			padding: 10px;
+		}
+		@include media ('<tablet') {
+			padding: 5px;
+			width: auto;
+		}
+	}
+	.item {
+		position: relative;
+		display: block;
+		width: 100%;
+		min-height: 50vh;
+		background: #ccc;
+		@include media ('<desktop'){
+			min-height: 30vh;
+		}
+		@include media ('<tablet'){
+			background: #fff;
+		}
+	}
+	.owl-item{
+		@include media ('print'){
+			float: none;
+			width: 100% !important;
+    		page-break-inside: avoid;
+		}
+	}
+	img{
+		
+	}
+}
+.owl-wrapper{
+	@include media ('print'){
+		transform: none !important;
+		width: 100% !important;
+	}
+}
+.item-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	@include media ('<tablet'){
+		position: static;
+	}
+	@include media ('print'){
+		position: static;
+		width: 100%;
+	}
+	& > .container {
+		@include media ('<desktop') {
+			max-width: 600px;
+			margin: 0 auto;
+		}
+	}
+}
+.center {
+	margin: 0 auto;
+}
+.items-carousel {
+	text-align: center;
+	color: #a3b1bf;
+	font-size: 24px;
+	line-height: 33px;
+	&:hover {
+		.owl-controls {
+			opacity: 1
+		}
+	}
+	@include media ('<desktop') {
+		font-size: 18px;
+		line-height: 20px;
+	}
+	@include media ('<tablet') {
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.owl-controls {
+		opacity: 0;
+		@include animate (opacity);
+		@include media ('<tablet') {
+			opacity: 1;
+		}
+	}
+	.owl-pagination {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -25px);
+		top: 100%;
+		background: $white;
+		border-radius: 2px;
+		padding: 0 10px;
+	}
+}
+.owl-theme {
+	.owl-pagination {
+		.owl-page {
+			padding: 10px 0;
+			@include media ('<tablet'){
+				padding: 0;
+			}
+			&.active {
+				span {
+					background: $green;
+				}
+			}
+			span {
+				background: $dark-blue;
+				opacity: 1;
+				width: 15px;
+				height: 15px;
+				margin: 5px;
+			}
+		}
+	}
+}
+.owl-buttons {
+	.owl {
+		&-prev, &-next {
+			top: 50%;
+			position: absolute;
+			font-size: 30px;
+			margin: -40px 0;
+			opacity: 0.5;
+			display: block;
+
+			.glyphicon {
+				padding: 15px;
+				border-radius: 2px;
+				background: none;
+				@include animate (color background);
+
+				&:hover {
+					background: #506a85;
+					color: $green;
+				}
+			}
+		}
+		&-prev {
+			left: 22px;
+		}
+		&-next {
+			right: 6px;
+		}
+	}
+	@include media ('<tablet') {
+		display: none;
+	}
+}
+.first-slide {
+	padding-top: 292px;
+	color: $white;
+	text-align: center;
+	@include media ('<desktop') {
+		padding-top: 100px;
+	}
+	@include media ('<tablet') {
+		padding-top: 10px;
+		color: #73879c;
+	}
+	@include media ('print'){
+		color: #000;
+	}
+	.title {
+		margin: 0 0 18px;
+	}
+	p {
+		margin: 0 0 65px;
+
+		@include media ('<desktop') {
+			margin: 0 0 30px;
+		}
+		@include media ('<tablet') {
+			margin: 0 0 10px;
+		}
+	}
+}
+.second-slide {
+	padding-top: 100px;
+	color: $white;
+	text-align: right;
+	float: right;
+	@include media ('<desktop') {
+		padding-top: 50px;
+	}
+	@include media ('<tablet') {
+		padding-top: 0px;
+		color: #73879c;
+	}
+	@include media ('print'){
+		color: #000;
+		text-align: center;
+	}
+}
+.third-slide {
+	padding-top: 100px;
+	color: #506a85;
+	text-align: left;
+	float: left;
+	@include media ('<desktop') {
+		padding-top: 50px;
+	}
+	@include media ('<tablet') {
+		padding-top: 0px;
+	}
+	@include media ('print'){
+		text-align: center;
+	}
+}
+.fourth-slide {
+	padding-top: 85px;
+	color: $white;
+	text-align: right;
+	float: right;
+	@include media ('<desktop') {
+		padding-top: 40px;
+	}
+	@include media ('<tablet') {
+		padding-top: 0px;
+		color: #73879c;
+	}
+}
+.fifth-slide {
+	padding-top: 95px;
+	color: $white;
+	text-align: center;
+	@include media ('<desktop') {
+		padding-top: 40px;
+	}
+	@include media ('<tablet') {
+		padding-top: 0px;
+		color: #73879c;
+	}
+	@include media ('print'){
+		color: #000;
+	}
+}
+.article-container {
+	max-width: 960px;
+	@include media ('<desktop') {
+		max-width: 500px;
+	}
+	@include media ('<tablet') {
+		margin: 0 0 30px;
+	}
+	@include media ('print'){
+		color: #000;
+		width: 100%;
+		text-align: center;
+		float: none;
+		margin: 0 auto;
+		padding-top: 10px;
+	}
+}

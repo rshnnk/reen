@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>REEN</title>
+        <script src="js/modernizr-custom.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:700|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <a tabindex="1" class="accessibility" href="#content">Skip to Content</a>
+        <div id="wrapper">
+            <img class="print-logo visible-print-block" src="images/logo.png" height="40" width="161" alt="REEN"/>
+            <header class="header">
+                <div class="add-nav hidden-print">
+                    <div class="container">
+                        <ul class="add-nav-items">
+                            <li><a href="mailto:info@reen.com"><i class="fa fa-envelope-o"></i>info@reen.com</a></li>
+                            <li><a href="tel:+001234567890"><i class="fa fa-mobile"></i>+00 (123) 456 78 90</a></li>
+                        </ul>
+                        <ul class="add-nav-items hidden-print">
+                            <li><a href="#" class="color dark-blue"><i class="fa fa-facebook"></i><span>facebook</span></a></li>
+                            <li ><a href="#" class="color red"><i class="fa fa-google-plus"></i><span>google-plus</span></a></li>
+                            <li ><a href="#" class="color light-blue"><i class="fa fa-twitter"></i><span>twitter</span></a></li>
+                            <li ><a href="#" class="color dark-red"><i class="fa fa-pinterest-p"></i><span>pinterest</span></a></li>
+                            <li ><a href="#" class="color blue"><i class="fa fa-behance-square"></i><span>behance-square</span></a></li>
+                            <li ><a href="#" class="color pink"><i class="fa fa-dribbble"></i><span>dribbble</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="navbar navbar-default hidden-print" data-spy="affix" data-offset-top="40">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">
+                                <img src="images/logo.png" alt="reen" width="161" height="40">
+                            </a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav text-uppercase">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">home</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Agency Style</a></li>
+                                        <li><a href="#">Product Style</a></li>
+                                        <li><a href="#">Service Style</a></li>
+                                        <li><a href="#">Portfolio Style</a></li>
+                                        <li><a href="#">Showcase Style</a></li>
+                                    </ul>
+                                </li>
+                                <li><a tabindex="0" href="#">portfolio</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">pages</a></li>
+                                <li><a href="#">features</a></li>
+                                <li class="dropdown wide-menu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">mega menu</a>
+                                    <div class="dropdown-menu">
+                                        <div class="container">
+                                            <div class="col-md-3 col-sm-8">
+                                                <div class="row">
+                                                    <h3>focus on</h3>
+                                                    <a href="#">
+                                                        <div class="item-img">
+                                                            <picture>
+                                                                <source srcset="images/wide-menu-phone.png, images/wide-menu-phone.png 2x" media="(max-width: 767px)">
+                                                                <source srcset="images/wide-menu-phone.png, images/wide-menu-phone.png  2x">
+                                                                <img src="images/wide-menu-phone.png" alt="img-description">
+                                                            </picture>
+                                                        </div>
+                                                    </a>
+                                                    <p>Consed quodips ameniat empernam que apid cust quas molor eatis numa estio.</p>
+                                                    <a href="#" class="btn text-uppercase">view project</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-4">
+                                                <div class="row">
+                                                    <h3>Special pages</h3>
+                                                    <ul>
+                                                        <li><a href="#">3 Columns Details Grid Portfolio</a></li>
+                                                        <li><a href="#">Fullscreen Grid Portfolio</a></li>
+                                                        <li><a href="#">Portfolio Post with Video</a></li>
+                                                        <li><a href="#">2 Columns Grid Blog with Left Sidebar</a></li>
+                                                        <li><a href="#">3 Columns Grid Blog without Sidebar</a></li>
+                                                        <li><a href="#">Blog Post with Right Sidebar</a></li>
+                                                        <li><a href="#">Side Navigation Page</a></li>
+                                                        <li><a href="#">About Page II</a></li>
+                                                        <li><a href="#">Service Page I</a></li>
+                                                        <li><a href="#">Pricing Page I</a></li>
+                                                        <li><a href="#">Contact Page I</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-5 product-item-inner">
+                                                <div class="row">
+                                                    <h3>
+                                                        Latest works
+                                                    </h3>
+                                                    <div class="col-xs-6">
+                                                        <div class="row">
+                                                            <a href="#">
+                                                                <div class="item-img">
+                                                                    <picture>
+                                                                        <!--[if IE 9]>
+                                                                        <video style="display: none;">
+                                                                            <![endif]-->
+                                                                            <source srcset="images/mega-menu_01.png" media="(max-width: 767px)">
+                                                                            <source srcset="images/mega-menu_01.png">
+                                                                            <!--[if IE 9]>
+                                                                        </video>
+                                                                        <![endif]-->
+                                                                        <img src="images/mega-menu_01.png" alt="img-description">
+                                                                    </picture>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <div class="row">
+                                                            <a href="#">
+                                                                <div class="item-img">
+                                                                    <picture>
+                                                                        <!--[if IE 9]>
+                                                                        <video style="display: none;">
+                                                                            <![endif]-->
+                                                                            <source srcset="images/mega-menu_03.png" media="(max-width: 767px)">
+                                                                            <source srcset="images/mega-menu_03.png">
+                                                                            <!--[if IE 9]>
+                                                                        </video>
+                                                                        <![endif]-->
+                                                                        <img src="images/mega-menu_03.png" alt="img-description">
+                                                                    </picture>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <div class="row">
+                                                            <a href="#">
+                                                                <div class="item-img">
+                                                                    <picture>
+                                                                        <!--[if IE 9]>
+                                                                        <video style="display: none;">
+                                                                            <![endif]-->
+                                                                            <source srcset="images/mega-menu_07.png" media="(max-width: 767px)">
+                                                                            <source srcset="images/mega-menu_07.png">
+                                                                            <!--[if IE 9]>
+                                                                        </video>
+                                                                        <![endif]-->
+                                                                        <img src="images/mega-menu_07.png" alt="img-description">
+                                                                    </picture>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <div class="row">
+                                                            <a href="#">
+                                                                <div class="item-img">
+                                                                    <picture>
+                                                                        <!--[if IE 9]>
+                                                                        <video style="display: none;">
+                                                                            <![endif]-->
+                                                                            <source srcset="images/mega-menu_09.png" media="(max-width: 767px)">
+                                                                            <source srcset="images/mega-menu_09.png">
+                                                                            <!--[if IE 9]>
+                                                                        </video>
+                                                                        <![endif]-->
+                                                                        <img src="images/mega-menu_09.png" alt="img-description">
+                                                                    </picture>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <div class="row">
+                                                            <a href="#">
+                                                                <div class="item-img">
+                                                                    <picture>
+                                                                        <!--[if IE 9]>
+                                                                        <video style="display: none;">
+                                                                            <![endif]-->
+                                                                            <source srcset="images/mega-menu_12.png" media="(max-width: 767px)">
+                                                                            <source srcset="images/mega-menu_12.png">
+                                                                            <!--[if IE 9]>
+                                                                        </video>
+                                                                        <![endif]-->
+                                                                        <img src="images/mega-menu_12.png" alt="img-description">
+                                                                    </picture>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <div class="row">
+                                                            <a href="#">
+                                                                <div class="item-img">
+                                                                    <picture>
+                                                                        <!--[if IE 9]>
+                                                                        <video style="display: none;">
+                                                                            <![endif]-->
+                                                                            <source srcset="images/mega-menu_13.png" media="(max-width: 767px)">
+                                                                            <source srcset="images/mega-menu_13.png">
+                                                                            <!--[if IE 9]>
+                                                                        </video>
+                                                                        <![endif]-->
+                                                                        <img src="images/mega-menu_13.png" alt="img-description">
+                                                                    </picture>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-sm-7">
+                                                <div class="row">
+                                                    <h3>about us</h3>
+                                                    <p>Voluptat ibusaped molorporro consequ idustibus. Reressi morum ut dolessiti tem nihicid ernatum, coria volore non pro officat ut autem accaborem conet. Omnis peribus qui dolent praeperrum coria.</p>
+                                                    <p>Equam conesti occum dolorest, quae venderes quistius, comnitatur sae dinam nonseculpa cum fugit is verciam</p>
+                                                    <a href="#" class="btn">read more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#">contact</a></li>
+                            </ul>
+                            <form class="navbar-form navbar-right">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" title="search" placeholder="Search">
+                                    <button tabindex="2" type="submit" class="search" accesskey="4">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section class="carousel" id="content">
+                <div id="owl-example" class="owl-carousel items-carousel">
+                    <section class="item">
+                        <picture>
+                            <!--[if IE 9]>
+                            <video style="display: none;">
+                                <![endif]-->
+                                <source srcset="images/slider-desktop-1.png, images/slider-desktop-1-2x.png 2x" media="(max-width: 767px)">
+                                <source srcset="images/slider-desktop-1.png, images/slider-desktop-1-2x.png 2x">
+                                <!--[if IE 9]>
+                            </video>
+                            <![endif]-->
+                            <img src="images/slider-desktop-1.png" alt="img-description">
+                        </picture>
+                        <div class="item-overlay">
+                            <div class="container">
+                                <article class="article-container center first-slide">
+                                    <h3 class="title">Made for Designers</h3>
+                                    <p>Create your online portfolio in minutes with the professionally and lovingly designed REEN website template. Customize your site with versatile and easy to use features.</p>
+                                    <a href="#" class="btn">Get started now</a>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="item">
+                        <picture>
+                            <!--[if IE 9]>
+                            <video style="display: none;">
+                                <![endif]-->
+                                <source srcset="images/slider-desktop-2.png, images/slider-desktop-2-2x.png 2x" media="(max-width: 767px)">
+                                <source srcset="images/slider-desktop-2.png, images/slider-desktop-2-2x.png 2x">
+                                <!--[if IE 9]>
+                            </video>
+                            <![endif]-->
+                            <img src="images/slider-desktop-2.png" alt="img-description">
+                        </picture>
+                        <div class="item-overlay">
+                            <div class="container">
+                                <article class="article-container second-slide">
+                                    <h3 class="title">Fresh and beautiful design</h3>
+                                    <p>REEN is designed to showcase your talent and put your work in the forefront.  Professionally use of typography and layout that fits your content.</p>
+                                    <a href="#" class="btn pull-right">Get started now</a>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="item">
+                        <picture>
+                            <source srcset="images/slider-desktop-3.png, images/slider-desktop-3-2x.png 2x" media="(max-width: 767px)">
+                            <source srcset="images/slider-desktop-3.png, images/slider-desktop-3-2x.png 2x">
+                            <!--[if IE 9]>
+                            </video>
+                            <![endif]-->
+                            <img src="images/slider-desktop-3.png" alt="img-description">
+                        </picture>
+                        <div class="item-overlay">
+                            <div class="container">
+                                <article class="article-container third-slide">
+                                    <h3 class="title-bg"><span>Clean and</span> <span>reusable code</span></h3>
+                                    <p>The clean code allows you to easily copy code blocks from content modules and past them in different places or layouts.</p>
+                                    <a href="#" class="btn">Get started now</a>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="item">
+                        <picture>
+                            <!--[if IE 9]>
+                            <video style="display: none;">
+                                <![endif]-->
+                                <source srcset="images/slider-desktop-4.png, images/slider-desktop-4-2x.png 2x" media="(max-width: 767px)">
+                                <source srcset="images/slider-desktop-4.png, images/slider-desktop-4-2x.png 2x">
+                                <!--[if IE 9]>
+                            </video>
+                            <![endif]-->
+                            <img src="images/slider-desktop-4.png" alt="img-description">
+                        </picture>
+                        <div class="item-overlay">
+                            <div class="container">
+                                <article class="article-container fourth-slide">
+                                    <h3 class="title-bg"><span>Just focus on </span><span>your creativity</span></h3>
+                                    <p>Take a break from messing around with heavy coding and spend your time brainstorming ideas for your next project.</p>
+                                    <a href="#" class="btn">Get started now</a>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="item">
+                        <picture>
+                            <!--[if IE 9]>
+                            <video style="display: none;">
+                                <![endif]-->
+                                <source srcset="images/slider-desktop-5.png, images/slider-desktop-5-2x.png 2x" media="(max-width: 767px)">
+                                <source srcset="images/slider-desktop-5.png, images/slider-desktop-5-2x.png 2x">
+                                <!--[if IE 9]>
+                            </video>
+                            <![endif]-->
+                            <img src="images/slider-desktop-5.png" alt="img-description">
+                        </picture>
+                        <div class="item-overlay">
+                            <div class="container">
+                                <div class="article-container center fifth-slide">
+                                    <h3 class="title">
+                                        Showcase your content
+                                    </h3>
+                                    <p>With REEN you have the possibility to create websites for various contents quickly and easily. Now it's up to you!</p>
+                                    <a href="#" class="btn">Get started now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="item-box">
+                <div class="container">
+                    <h1>Beautiful. Clean. Responsive.</h1>
+                    <div class="col-lg-offset-2 col-lg-8">
+                        <div class="row">
+                            <p>REEN is a high-quality solution for those who want a beautiful website in no time. It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android, it doesn't matter. Your content will always looks its absolute best.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-sm-4 item">
+                                <i class="fa fa-heart-o pull-left"></i>
+                                <div class="wrapper">
+                                    <h2>Passion</h2>
+                                    <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 item">
+                                <i class="fa fa-lightbulb-o pull-left"></i>
+                                <div class="wrapper">
+                                    <h2>Creativity</h2>
+                                    <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 item">
+                                <i class="fa fa-star-o pull-left"></i>
+                                <div class="wrapper">
+                                    <h2>Quality</h2>
+                                    <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="product-list hidden-print">
+                <div class="container">
+                    <h1>Check out our latest works</h1>
+                    <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="item">
+                                <a href="#">
+                                    <div class="item-img fade-in">
+                                        <picture>
+                                            <!--[if IE 9]>
+                                            <video style="display: none;">
+                                                <![endif]-->
+                                                <source srcset="images/work-1.png, images/work-1-2x.png 2x" media="(max-width: 767px)">
+                                                <source srcset="images/work-1.png, images/work-1-2x.png 2x" >
+                                                <!--[if IE 9]>
+                                            </video>
+                                            <![endif]-->
+                                            <img src="images/work-1.png" alt="img-description">
+                                        </picture>
+                                    </div>
+                                </a>
+                                <a href="#" class="title">Grand Motel gets an identity brushup</a>
+                                <a href="#" class="category">Identity</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="item">
+                                <a href="#">
+                                    <div class="item-img fade-in">
+                                        <picture>
+                                            <!--[if IE 9]>
+                                            <video style="display: none;">
+                                                <![endif]-->
+                                                <source srcset="images/work-2.png, images/work-2-2x.png 2x" media="(max-width: 767px)">
+                                                <source srcset="images/work-2.png, images/work-2-2x.png 2x">
+                                                <!--[if IE 9]>
+                                            </video>
+                                            <![endif]-->
+                                            <img src="images/work-2.png" alt="img-description">
+                                        </picture>
+                                    </div>
+                                </a>
+                                <a href="#" class="title">Fresh branding for a creative startup</a>
+                                <a href="#" class="category">Identity</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="product-carousel owl-carousel">
+                            <div class="carousel-item">
+                                <picture>
+                                    <!--[if IE 9]>
+                                    <video style="display: none;">
+                                        <![endif]-->
+                                        <source srcset="images/slider-2-desktop_09.png, images/slider-2-desktop-2x_09.png 2x" media="(max-width: 767px)">
+                                        <source srcset="images/slider-2-desktop_09.png, images/slider-2-desktop-2x_09.png 2x">
+                                        <!--[if IE 9]>
+                                    </video>
+                                    <![endif]-->
+                                    <img src="images/slider-2-desktop_09.png" alt="img-description">
+                                </picture>
+                                <a href="#" class="overlay">
+                                    <h4 class="title">Astor &amp; Yancy</h4>
+                                    <p>Identity</p>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <picture>
+                                    <!--[if IE 9]>
+                                    <video style="display: none;">
+                                        <![endif]-->
+                                        <source srcset="images/slider-2-desktop_11.png, images/slider-2-desktop-2x_11.png 2x" media="(max-width: 767px)">
+                                        <source srcset="images/slider-2-desktop_11.png, images/slider-2-desktop-2x_11.png 2x" >
+                                        <!--[if IE 9]>
+                                    </video>
+                                    <![endif]-->
+                                    <img src="images/slider-2-desktop_11.png" alt="img-description">
+                                </picture>
+                                <a href="#" class="overlay">
+                                    <h4 class="title">Astor &amp; Yancy</h4>
+                                    <p>Identity</p>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <picture>
+                                    <!--[if IE 9]>
+                                    <video style="display: none;">
+                                        <![endif]-->
+                                        <source srcset="images/slider-2-desktop_12.png, images/slider-2-desktop-2x_12.png 2x" media="(max-width: 767px)">
+                                        <source srcset="images/slider-2-desktop_12.png, images/slider-2-desktop-2x_12.png 2x" >
+                                        <!--[if IE 9]>
+                                    </video>
+                                    <![endif]-->
+                                    <img src="images/slider-2-desktop_12.png" alt="img-description">
+                                </picture>
+                                <a href="#" class="overlay">
+                                    <h4 class="title">Astor &amp; Yancy</h4>
+                                    <p>Identity</p>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <picture>
+                                    <!--[if IE 9]>
+                                    <video style="display: none;">
+                                        <![endif]-->
+                                        <source srcset="images/slider-2-desktop_14.png, images/slider-2-desktop-2x_14.png 2x" media="(max-width: 767px)">
+                                        <source srcset="images/slider-2-desktop_14.png, images/slider-2-desktop-2x_14.png 2x" >
+                                        <!--[if IE 9]>
+                                    </video>
+                                    <![endif]-->
+                                    <img src="images/slider-2-desktop_14.png" alt="img-description">
+                                </picture>
+                                <a href="#" class="overlay">
+                                    <h4 class="title">Astor &amp; Yancy</h4>
+                                    <p>Identity</p>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <picture>
+                                    <!--[if IE 9]>
+                                    <video style="display: none;">
+                                        <![endif]-->
+                                        <source srcset="images/slider-2-desktop_09.png, images/slider-2-desktop-2x_09.png 2x" media="(max-width: 767px)">
+                                        <source srcset="images/slider-2-desktop_09.png, images/slider-2-desktop-2x_09.png 2x">
+                                        <!--[if IE 9]>
+                                    </video>
+                                    <![endif]-->
+                                    <img src="images/slider-2-desktop_09.png" alt="img-description">
+                                </picture>
+                                <a href="#" class="overlay">
+                                    <h4 class="title">Astor &amp; Yancy</h4>
+                                    <p>Identity</p>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <picture>
+                                    <!--[if IE 9]>
+                                    <video style="display: none;">
+                                        <![endif]-->
+                                        <source srcset="images/slider-2-desktop_11.png, images/slider-2-desktop-2x_11.png 2x" media="(max-width: 767px)">
+                                        <source srcset="images/slider-2-desktop_11.png, images/slider-2-desktop-2x_11.png 2x" >
+                                        <!--[if IE 9]>
+                                    </video>
+                                    <![endif]-->
+                                    <img src="images/slider-2-desktop_11.png" alt="img-description">
+                                </picture>
+                                <a href="#" class="overlay">
+                                    <h4 class="title">Astor &amp; Yancy</h4>
+                                    <p>Identity</p>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <picture>
+                                    <!--[if IE 9]>
+                                    <video style="display: none;">
+                                        <![endif]-->
+                                        <source srcset="images/slider-2-desktop_12.png, images/slider-2-desktop-2x_12.png 2x" media="(max-width: 767px)">
+                                        <source srcset="images/slider-2-desktop_12.png, images/slider-2-desktop-2x_12.png 2x" >
+                                        <!--[if IE 9]>
+                                    </video>
+                                    <![endif]-->
+                                    <img src="images/slider-2-desktop_12.png" alt="img-description">
+                                </picture>
+                                <a href="#" class="overlay">
+                                    <h4 class="title">Astor &amp; Yancy</h4>
+                                    <p>Identity</p>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <picture>
+                                    <!--[if IE 9]>
+                                    <video style="display: none;">
+                                        <![endif]-->
+                                        <source srcset="images/slider-2-desktop_14.png, images/slider-2-desktop-2x_14.png 2x" media="(max-width: 767px)">
+                                        <source srcset="images/slider-2-desktop_14.png, images/slider-2-desktop-2x_14.png 2x">
+                                        <!--[if IE 9]>
+                                    </video>
+                                    <![endif]-->
+                                    <img src="images/slider-2-desktop_14.png" alt="img-description">
+                                </picture>
+                                <a href="#" class="overlay">
+                                    <h4 class="title">Astor &amp; Yancy</h4>
+                                    <p>Identity</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container contact-box text-center hidden-print">
+                <h1>Want to work with us?</h1>
+                <div class="col-lg-offset-2 col-lg-8">
+                    <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+                </div>
+                <div class="col-lg-12">
+                    <a tabindex="3" href="#" class="btn">GET IN TOUCH</a>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container footer-boxes">
+                    <div class="col-sm-3">
+                        <h3>Who we are</h3>
+                        <a class="logo hidden-print" href="#"><img src="images/footer-logo.png" alt="reen"></a>
+                        <p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+                        <a href="#" class="more hidden-print">More about us <i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                    <div class="col-sm-3 box-images hidden-print">
+                        <h3>Latest works</h3>
+                        <div class="col-md-6  box-image">
+                            <div class="row">
+                                <a href="#">
+                                    <div class="item-img">
+                                        <picture>
+                                            <!--[if IE 9]>
+                                            <video style="display: none;">
+                                                <![endif]-->
+                                                <source srcset="images/footer-work-1.png, images/footer-work-1-2x.png 2x" media="(max-width: 767px)">
+                                                <source srcset="images/footer-work-1.png, images/footer-work-1-2x.png 2x" media="(max-width: 1023px)">
+                                                <!--[if IE 9]>
+                                            </video>
+                                            <![endif]-->
+                                            <img src="images/footer-work-1.png" alt="img-description">
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6  box-image">
+                            <div class="row">
+                                <a href="#">
+                                    <div class="item-img">
+                                        <picture>
+                                            <!--[if IE 9]>
+                                            <video style="display: none;">
+                                                <![endif]-->
+                                                <source srcset="images/footer-work-2.png, images/footer-work-2-2x.png 2x" media="(max-width: 767px)">
+                                                <source srcset="images/footer-work-2.png, images/footer-work-2-2x.png 2x" media="(max-width: 1023px)">
+                                                <!--[if IE 9]>
+                                            </video>
+                                            <![endif]-->
+                                            <img src="images/footer-work-2.png" alt="img-description">
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6  box-image">
+                            <div class="row">
+                                <a href="#">
+                                    <div class="item-img">
+                                        <picture>
+                                            <!--[if IE 9]>
+                                            <video style="display: none;">
+                                                <![endif]-->
+                                                <source srcset="images/footer-work-3.png, images/footer-work-3-2x.png 2x" media="(max-width: 767px)">
+                                                <source srcset="images/footer-work-3.png, images/footer-work-3-2x.png 2x" media="(max-width: 1023px)">
+                                                <!--[if IE 9]>
+                                            </video>
+                                            <![endif]-->
+                                            <img src="images/footer-work-3.png" alt="img-description">
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6  box-image">
+                            <div class="row">
+                                <a href="#">
+                                    <div class="item-img">
+                                        <picture>
+                                            <!--[if IE 9]>
+                                            <video style="display: none;">
+                                                <![endif]-->
+                                                <source srcset="images/footer-work-4.png, images/footer-work-4-2x.png 2x" media="(max-width: 767px)">
+                                                <source srcset="images/footer-work-4.png, images/footer-work-4-2x.png 2x" media="(max-width: 1023px)">
+                                                <!--[if IE 9]>
+                                            </video>
+                                            <![endif]-->
+                                            <img src="images/footer-work-4.png" alt="img-description">
+                                        </picture>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3>Get in touch</h3>
+                        <p>Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
+                        <address>
+                            <i class="fa fa-map-marker"></i>84 Street, City, State 24813 <br>
+                            <a href="tel:+001234567890"><i class="fa fa-mobile"></i>+00 (123) 456 78 90</a> <br>
+                            <a href="mailto:info@reen.com"><i class="fa fa-envelope-o"></i>info@reen.com</a>
+                        </address>
+                    </div>
+                    <div class="col-sm-3 hidden-print">
+                        <h3>Free updates</h3>
+                        <p>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
+                        <div class="subscribe-form">
+                            <form>
+                                <input tabindex="4" type="text" class="subscribe-input" placeholder="Enter your email address" title="email-address input" accesskey="9">
+                                <button class="text-uppercase subscribe-button">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="bottom-nav">
+                <div class="container">
+                    <div class="copyright">
+                        <p>&copy; 2014 REEN. All rights reserved.</p>
+                    </div>
+                    <nav class="navigation pull-right hidden-print">
+                        <ul class="nav">
+                            <li><a href="#">Home</a></li>
+                            <li>
+                                <a href="#">Portfolio</a>
+                            </li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <a tabindex="5" href="#" class="back-to-top hidden-print">
+                    <i class="glyphicon glyphicon-menu-up"><span>scroll page to top button</span></i>
+                </a>
+            </div>
+            <a tabindex="6" class="accessibility" href="#wrapper">Back to top</a>
+        </div>
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/picturefill.js"></script>
+        <script src="js/jquery.placeholder.min.js"></script>
+        <script src="js/jquery.main.js"></script>
+    </body>
+</html>
